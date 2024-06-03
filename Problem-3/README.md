@@ -91,4 +91,6 @@ fmt.Println("Hello")
    Main goroutine starts and creates the channel and worker goroutines.
    Main goroutine sends a function that prints "HERE1" to the channel.
    Main goroutine immediately prints "Hello" and then exits.
-   When the main goroutine exits, the program terminates, killing all other goroutines. The worker goroutines might not get a chance to read and execute the function from the channel before the main goroutine exits. This is why the output is not deteminss and HERE1 might or might not get printed.
+   When the main goroutine exits, the program terminates, killing all other goroutines. The worker goroutines might 
+   not get a chance to read and execute the function from the channel before the main goroutine exits. This is why 
+   the output is not deterministic and 'HERE1' might or might not get printed.
