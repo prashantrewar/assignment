@@ -40,7 +40,7 @@ cnp <- func() {
 
 ```
 
-The make(chan func(), 10) creates a buffered channel with a capacity of 10 means the channel can hold up to 10 function references before sending blocks. After that we run a for loop which iterates 4 times and in each iteration we run a goroutine (using the go keyword) which reads values (in this case, a function) from the buffer channel and executes the function.In the end we are inserting a function that prins HERE1 into the buffer channel.
+The make(chan func(), 10) creates a buffered channel with a capacity of 10 means the channel can hold up to 10 function references before sending blocks. After that we run a for loop which iterates 4 times and in each iteration we run a goroutine (using the go keyword) which reads values (in this case, a function) from the buffer channel and executes the function.In the end we are inserting a function that prints HERE1 into the buffer channel.
 
 
 
