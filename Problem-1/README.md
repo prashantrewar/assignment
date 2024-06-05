@@ -50,7 +50,7 @@ $ sudo bpftool map pin name port_map /sys/fs/bpf/port_map
 gcc -o set_port set_port.c -lbpf
 ```
 
-This command creates a set_port.o name binary file.
+This command creates a set_port name binary file.
 
 ## Step 6: Update the Port Number:
 
